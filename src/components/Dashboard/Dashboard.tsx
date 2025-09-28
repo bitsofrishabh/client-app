@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Typography, Space, Progress, Button, Row, Col, Statistic, Alert } from 'antd';
-import { TrophyOutlined, CalendarOutlined, ScaleOutlined, FireOutlined } from '@ant-design/icons';
+import {
+  TrophyOutlined,
+  CalendarOutlined,
+  DashboardOutlined, // use as the “scale” icon
+  CameraOutlined,
+  MessageOutlined,
+} from '@ant-design/icons';
 import { useAuth } from '../../hooks/useAuth';
 
 const { Title, Text } = Typography;
@@ -63,7 +69,7 @@ const Dashboard: React.FC = () => {
                 value={weightLoss}
                 suffix="kg"
                 valueStyle={{ color: '#52c41a', fontSize: 20 }}
-                prefix={<ScaleOutlined />}
+                prefix={<DashboardOutlined  />}
               />
             </Card>
           </Col>
