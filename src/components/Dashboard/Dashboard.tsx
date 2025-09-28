@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Card, Typography, Space, Progress, Button, Row, Col, Statistic, Alert } from 'antd';
-import { TrophyOutlined, CalendarOutlined, WeightOutlined, FireOutlined } from '@ant-design/icons';
+import { TrophyOutlined, CalendarOutlined, ScaleOutlined, FireOutlined } from '@ant-design/icons';
 import { useAuth } from '../../hooks/useAuth';
 
 const { Title, Text } = Typography;
@@ -63,7 +63,7 @@ const Dashboard: React.FC = () => {
                 value={weightLoss}
                 suffix="kg"
                 valueStyle={{ color: '#52c41a', fontSize: 20 }}
-                prefix={<WeightOutlined />}
+                prefix={<ScaleOutlined />}
               />
             </Card>
           </Col>
